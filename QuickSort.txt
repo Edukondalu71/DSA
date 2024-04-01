@@ -1,0 +1,18 @@
+let count = 0;
+
+function quickSort(array) {
+    let n = array.length;
+    count = count +1;
+    if(n <= 1) return array;
+    let left = [];
+    let right = [];
+    let current = array[0];
+    for (let i = 1; i < n; i ++) {
+      if(array[i] > current) right.push(array[i]);
+      else  left.push(array[i])
+    }
+    return quickSort(left).concat(current, quickSort(right))
+};
+
+
+console.log(quickSort([2,1,4,5,9,4,12,34,11]));

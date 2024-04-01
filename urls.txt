@@ -1,0 +1,4 @@
+https://log2base2.com/dashboard/trial-videos  
+
+//graph ql
+https://create-react-app.dev/docs/loading-graphql-files

@@ -1,0 +1,10 @@
+function febnacciFunction(n) {
+    let febnacciSerirs = [0,1];
+    for (let i = 0; i<n-2; i++) {
+        let item = febnacciSerirs[i] + febnacciSerirs[i+1];
+        febnacciSerirs.push(item);
+    }
+    return febnacciSerirs;
+}
+
+console.log(febnacciFunction(5));
